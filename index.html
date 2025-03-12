@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--* TITOLO DELLA PAGINA-->
-    <title>#Title Here#</title>
+    <title>Primi attori</title>
     <!--* FAVICON-->
     <link rel="icon" type="image/x-icon" href="./images/world-wide-web.png">
     <!--* BOOTSTRAP-->
@@ -14,9 +14,17 @@
 </head>
 <body>
     
-    <h1> Welcome to Web_Doc_Template </h1>
+    <h1 class="bg-primary w-100 text-center text-white"> Seleziona i primi N attori </h1>
 
-
+    <div class="w-50 mx-auto bg-secondary-subtle border-black border-3 rounded-3 p-2">
+        <form action="php/script.php" method="get">
+            <div class="mb-3 text-center">
+                <label for="number">Numero di attori</label>
+                <input type="number" min="0" id="number" name="number" class="form-control w-50 mx-auto">
+                <button type="submit"> INVIA </button>
+            </div>
+        </form>    
+    </div>
 
 
 
